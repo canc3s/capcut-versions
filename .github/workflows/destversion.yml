@@ -1,0 +1,198 @@
+name: CapCut Version Collector
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 每天 UTC 7:00 运行
+  workflow_dispatch:
+    inputs:
+      action:
+        description: '运行模式'
+        required: true
+        default: 'monitor'
+        type: choice
+        options:
+          - monitor    # 增量采集 + 发布新版本
+          - baseline   # 全量重建历史目录（不发布）
+          - backfill   # 分批补传历史安装包
+      product:
+        description: '产品（backfill 时生效）'
+        required: false
+        default: 'all'
+        type: choice
+        options: [all, jianying, capcut]
+      platform:
+        description: '平台（backfill 时生效）'
+        required: false
+        default: 'all'
+        type: choice
+        options: [all, win-x64, win-arm64, mac, android]
+      batch_size:
+        description: '每个批次回填的版本数'
+        required: false
+        default: '6'
+        type: string
+      max_parallel:
+        description: '回填并发数'
+        required: false
+        default: '4'
+        type: string
+
+permissions:
+  contents: write
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  GITHUB_REPOSITORY: ${{ github.repository }}
+
+concurrency:
+  group: capcut-versions-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    if: github.event_name == 'schedule' || inputs.action == 'monitor' || inputs.action == 'baseline'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Setup environment
+        run: |
+          chmod +x scripts/*.sh
+          python3 --version
+          gh --version
+
+      - name: Collect versions
+        run: |
+          if [ "${{ inputs.action }}" = "baseline" ]; then
+            ./scripts/monitor.sh collect --deep
+          else
+            ./scripts/monitor.sh collect
+          fi
+
+      - name: Publish new versions
+        if: inputs.action != 'baseline'
+        continue-on-error: true
+        run: ./scripts/monitor.sh publish --new-only --with-asset --max 20
+
+      - name: Sync release state
+        continue-on-error: true
+        run: ./scripts/monitor.sh sync
+
+      - name: Regenerate release log
+        run: ./scripts/monitor.sh log
+
+      - name: Commit catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versions.json RELEASE_LOG.md
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: update versions $(date -u +%F)"
+            git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME:-master}"
+          fi
+
+  prepare:
+    if: github.event_name == 'workflow_dispatch' && inputs.action == 'backfill'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Create metadata releases
+        run: |
+          ./scripts/monitor.sh publish \
+            --product "${{ inputs.product }}" \
+            --platform "${{ inputs.platform }}" \
+            --max 1000
+
+  plan:
+    needs: prepare
+    if: github.event_name == 'workflow_dispatch' && inputs.action == 'backfill'
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.plan.outputs.matrix }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Build backfill matrix
+        id: plan
+        run: |
+          MATRIX="$(./scripts/monitor.sh plan --json \
+            --product "${{ inputs.product }}" \
+            --platform "${{ inputs.platform }}" \
+            --batch-size "${{ inputs.batch_size }}")"
+          echo "matrix=$MATRIX" >> "$GITHUB_OUTPUT"
+
+  backfill:
+    needs: plan
+    if: github.event_name == 'workflow_dispatch' && inputs.action == 'backfill'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ fromJSON(github.event.inputs.max_parallel || '4') }}
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Backfill assets
+        run: |
+          if [ -z "${{ matrix.ids }}" ]; then
+            echo "nothing to do"
+            exit 0
+          fi
+          ./scripts/monitor.sh backfill --ids "${{ matrix.ids }}"
+
+      - name: Cleanup
+        if: always()
+        run: rm -rf temp
+
+  finalize:
+    needs: backfill
+    if: always() && github.event_name == 'workflow_dispatch' && inputs.action == 'backfill'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+
+      - name: Sync release state
+        continue-on-error: true
+        run: |
+          chmod +x scripts/*.sh
+          ./scripts/monitor.sh sync
+
+      - name: Regenerate release log
+        run: ./scripts/monitor.sh log
+
+      - name: Commit catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add versions.json RELEASE_LOG.md
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "chore: sync backfilled releases $(date -u +%F)"
+            git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME:-master}"
+          fi
+
