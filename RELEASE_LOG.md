@@ -260,13 +260,15 @@
 | 2026-11-03 | **9.7.0.4156** | 601.9 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4156-capcut-win-arm64) |
 | 2026-11-03 | **9.7.0.4153** | 601.9 MiB | `189b2981` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4153-capcut-win-arm64) |
 
-### macOS (10)
+### macOS (12)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-04 | **9.8.0-beta3.4773** | 1.3 GiB | `7f15a47f` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0-beta3.4773-capcut-mac) |
 | 2026-11-03 | **9.8.0-beta2.4761** | 1.3 GiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0-beta2.4761-capcut-mac) |
 | 2026-11-03 | **9.8.0-beta1.4758** | 1.3 GiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0-beta1.4758-capcut-mac) |
 | 2026-11-03 | **9.7.5-beta2.4719** | 1.2 GiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.5-beta2.4719-capcut-mac) |
+| 2026-11-04 | **9.7.0.4727** | 1.3 GiB | `71851ea5` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4727-capcut-mac) |
 | 2026-11-03 | **9.5.0.4590** | 1.2 GiB | `93306fb1` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.5.0.4590-capcut-mac) |
 | 2026-11-03 | **9.4.1.4574** | 1.2 GiB | `86d48a42` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.4.1.4574-capcut-mac) |
 | 2026-11-03 | **9.4.0.4556** | 1.2 GiB | `e0091b8f` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.4.0.4556-capcut-mac) |

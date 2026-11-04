@@ -7544,6 +7544,23 @@
    "last_seen": "2026-11-04"
   },
   {
+   "id": "capcut-mac-9.8.0-beta3.4773",
+   "product": "capcut",
+   "platform": "mac",
+   "version": "9.8.0-beta3.4773",
+   "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_8_0-beta3_4773_capcutpc_beta_creatortool_nosandbox.dmg",
+   "size": 1370534423,
+   "sha256": "7f15a47f066c6e7e03b15fff60208eecbd503fafe1e1ee6a7a26494e6f2e2bb4",
+   "release_date": null,
+   "source": "capcut-settings",
+   "asset_name": "CapCut_9_8_0-beta3_4773_capcutpc_beta_creatortool_nosandbox.dmg",
+   "first_seen": "2026-11-04",
+   "released": true,
+   "dead": false,
+   "alternates": [],
+   "http_status": 206
+  },
+  {
    "id": "capcut-mac-9.8.0-beta2.4761",
    "product": "capcut",
    "platform": "mac",
@@ -7596,6 +7613,23 @@
    "alternates": [],
    "http_status": 206,
    "last_seen": "2026-11-04"
+  },
+  {
+   "id": "capcut-mac-9.7.0.4727",
+   "product": "capcut",
+   "platform": "mac",
+   "version": "9.7.0.4727",
+   "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_7_0_4727_capcutpc_0_creatortool_nosandbox.dmg",
+   "size": 1359378683,
+   "sha256": "71851ea5761da4100782dde8dca1740dc17b42c610803d57cb8d440c791c7dfc",
+   "release_date": null,
+   "source": "capcut-settings",
+   "asset_name": "CapCut_9_7_0_4727_capcutpc_0_creatortool_nosandbox.dmg",
+   "first_seen": "2026-11-04",
+   "released": true,
+   "dead": false,
+   "alternates": [],
+   "http_status": 206
   },
   {
    "id": "capcut-mac-9.5.0.4590",
@@ -7741,5 +7775,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-04T08:45:25Z"
+ "updated_at": "2026-11-04T18:14:57Z"
 }
