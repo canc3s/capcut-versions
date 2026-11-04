@@ -95,7 +95,16 @@ jobs:
             echo "no changes"
           else
             git commit -m "chore: update versions $(date -u +%F)"
-            git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME:-master}"
+            BRANCH="${GITHUB_REF_NAME:-main}"
+            for i in 1 2 3; do
+              git fetch origin "$BRANCH"
+              git rebase "origin/$BRANCH" || { git rebase --abort; sleep 5; continue; }
+              if git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:$BRANCH"; then
+                exit 0
+              fi
+              sleep 5
+            done
+            exit 1
           fi
 
   prepare:
@@ -193,6 +202,15 @@ jobs:
             echo "no changes"
           else
             git commit -m "chore: sync backfilled releases $(date -u +%F)"
-            git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME:-master}"
+            BRANCH="${GITHUB_REF_NAME:-main}"
+            for i in 1 2 3; do
+              git fetch origin "$BRANCH"
+              git rebase "origin/$BRANCH" || { git rebase --abort; sleep 5; continue; }
+              if git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:$BRANCH"; then
+                exit 0
+              fi
+              sleep 5
+            done
+            exit 1
           fi
 
