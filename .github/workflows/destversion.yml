@@ -2,7 +2,7 @@ name: CapCut Version Collector
 
 on:
   schedule:
-    - cron: '17 7 * * *'  # 每天 UTC 7:17 运行，避开整点调度高峰
+    - cron: '39 10 * * *'  # 每天北京时间 18:39（UTC 10:39）运行，避开整点调度高峰
   workflow_dispatch:
     inputs:
       action:
