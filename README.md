@@ -124,6 +124,12 @@ GitHub Actions 中在 `destversion.yml` 选择 `action=backfill`，按产品、�
 
 ---
 
+## 🔗 友链
+
+- [wechat-versions](https://github.com/canc3s/wechat-versions) — 微信 / WeChat 多平台离线完整安装包归档
+
+---
+
 ## 📄 许可证
 
 本项目基于 MIT License 开源。

@@ -81,6 +81,12 @@ The project watches official and official-mirror channels, archives every new ve
 
 ---
 
+## 🔗 Related Projects
+
+- [wechat-versions](https://github.com/canc3s/wechat-versions) — archive of WeChat installers for Windows, macOS and Android
+
+---
+
 ## 📄 License
 
 MIT
