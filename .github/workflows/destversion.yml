@@ -184,33 +184,30 @@ jobs:
           fetch-depth: 1
           persist-credentials: false
 
-      - name: Sync release state
-        continue-on-error: true
-        run: |
-          chmod +x scripts/*.sh
-          ./scripts/monitor.sh sync
-
-      - name: Regenerate release log
-        run: ./scripts/monitor.sh log
-
       - name: Commit catalog
         run: |
+          chmod +x scripts/*.sh
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add versions.json RELEASE_LOG.md
-          if git diff --cached --quiet; then
-            echo "no changes"
-          else
+          BRANCH="${GITHUB_REF_NAME:-main}"
+          for i in 1 2 3; do
+            # Rebuild the catalog on top of the latest branch instead of rebasing
+            # generated files: versions.json and RELEASE_LOG.md always conflict
+            # when the remote moved during a long backfill.
+            git fetch origin "$BRANCH"
+            git reset --hard "origin/$BRANCH"
+            ./scripts/monitor.sh sync || true
+            ./scripts/monitor.sh log
+            git add versions.json RELEASE_LOG.md
+            if git diff --cached --quiet; then
+              echo "no changes"
+              exit 0
+            fi
             git commit -m "chore: sync backfilled releases $(date -u +%F)"
-            BRANCH="${GITHUB_REF_NAME:-main}"
-            for i in 1 2 3; do
-              git fetch origin "$BRANCH"
-              git rebase "origin/$BRANCH" || { git rebase --abort; sleep 5; continue; }
-              if git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:$BRANCH"; then
-                exit 0
-              fi
-              sleep 5
-            done
-            exit 1
-          fi
+            if git push "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:$BRANCH"; then
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1
 
