@@ -306,7 +306,6 @@ class Catalog:
         if old is None:
             entry.setdefault("first_seen", TODAY)
             entry.setdefault("released", False)
-            entry.setdefault("archived", False)
             entry.setdefault("dead", False)
             entry.setdefault("alternates", [])
             self.entries[eid] = entry
@@ -882,7 +881,7 @@ def do_publish(cat, entries, with_asset=False, dry_run=False, max_count=None):
     if max_count:
         todo = todo[:max_count]
     log("待创建 Release: %d 个%s" % (len(todo), "（dry-run）" if dry_run else ""))
-    created = archived = failed = 0
+    created = uploaded = failed = 0
     for e in todo:
         tag = tag_of(e)
         try:
@@ -902,16 +901,15 @@ def do_publish(cat, entries, with_asset=False, dry_run=False, max_count=None):
                 name = dest.name
                 gh(["release", "upload", tag, str(dest), "--clobber"], timeout=1800)
                 refresh_notes(e)
-                archived += 1
+                uploaded += 1
                 dest.unlink(missing_ok=True)
-                e["archived"] = True
 
         except Exception as ex:
             failed += 1
             e["last_error"] = str(ex)[:300]
             warn("%s: %s" % (tag, ex))
         time.sleep(1.0)
-    return {"created": created, "archived": archived, "failed": failed, "total": len(todo)}
+    return {"created": created, "uploaded": uploaded, "failed": failed, "total": len(todo)}
 
 
 def do_backfill(cat, ids, dry_run=False, force=False):
@@ -940,7 +938,6 @@ def do_backfill(cat, ids, dry_run=False, force=False):
             gh(["release", "upload", tag, str(dest), "--clobber"], timeout=1800)
             refresh_notes(e)
             dest.unlink(missing_ok=True)
-            e["archived"] = True
             e["released"] = True
             e["last_error"] = None
             ok += 1
@@ -975,25 +972,15 @@ def render_log(cat, path=RELEASE_LOG):
                 continue
             entries.sort(key=lambda e: vkey(e.get("version")), reverse=True)
             lines += ["### %s (%d)" % (PLATFORMS[platform], len(entries)), "",
-                      "| 日期 | 版本 | 大小 | SHA256 | 归档 | 下载 |",
-                      "| :--- | :--- | :--- | :--- | :--- | :--- |"]
+                      "| 日期 | 版本 | 大小 | SHA256 | 下载 |",
+                      "| :--- | :--- | :--- | :--- | :--- |"]
             for e in entries:
-                assets = state.get(tag_of(e)) or set()
-                if e.get("dead"):
-                    status = "链接失效"
-                elif assets:
-                    status = "已归档"
-                elif e.get("released"):
-                    status = "待上传"
-                else:
-                    status = "待发布"
                 link = ("https://github.com/%s/releases/tag/%s" % (REPO, tag_of(e))) if e.get("released") or tag_of(e) in state else ""
-                lines.append("| %s | **%s** | %s | `%s` | %s | %s |" % (
+                lines.append("| %s | **%s** | %s | `%s` | %s |" % (
                     e.get("release_date") or e.get("first_seen") or "-",
                     e.get("version"),
                     human_size(e.get("size")),
                     (e.get("sha256") or "")[:8] or "-",
-                    status,
                     "[Release](%s)" % link if link else "-",
                 ))
             lines.append("")
@@ -1124,19 +1111,17 @@ def cmd_plan(args):
 def cmd_sync(args):
     cat = Catalog()
     state = release_state()
-    released = archived = 0
+    released = with_assets = 0
     for e in cat.entries.values():
         tag = tag_of(e)
+        e.pop("archived", None)
         if tag in state:
             e["released"] = True
             if state[tag]:
-                e["archived"] = True
-                archived += 1
-            elif not e.get("dead"):
-                e["archived"] = False
+                with_assets += 1
             released += 1
     cat.save()
-    log("同步 Releases: %d 个已发布, %d 个含附件" % (released, archived))
+    log("同步 Releases: %d 个已发布, %d 个含附件" % (released, with_assets))
     return 0
 
 
@@ -1151,10 +1136,9 @@ def cmd_status(args):
             if not es:
                 continue
             released = sum(1 for e in es if e.get("released"))
-            archived = sum(1 for e in es if e.get("archived"))
             dead = sum(1 for e in es if e.get("dead"))
-            log("  %-13s %3d 条  已发布 %3d  已归档 %3d  失效 %3d  %s" % (
-                PLATFORMS[platform], len(es), released, archived, dead,
+            log("  %-13s %3d 条  已发布 %3d  失效 %3d  %s" % (
+                PLATFORMS[platform], len(es), released, dead,
                 "最新 " + max((e.get("version") for e in es), key=vkey)))
     return 0
 
