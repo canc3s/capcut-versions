@@ -35,7 +35,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 206
   },
   {
@@ -3264,7 +3264,7 @@
     }
    ],
    "http_status": 206,
-   "last_seen": "2026-11-07"
+   "last_seen": "2026-11-08"
   },
   {
    "id": "jianying-win-arm64-11.6.0.14555",
@@ -3281,7 +3281,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 0
   },
   {
@@ -3299,7 +3299,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 0
   },
   {
@@ -3317,7 +3317,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 0
   },
   {
@@ -3475,7 +3475,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 206
   },
   {
@@ -3493,7 +3493,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 206
   },
   {
@@ -3511,7 +3511,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 206
   },
   {
@@ -7522,7 +7522,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 206
   },
   {
@@ -7541,7 +7541,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-07"
+   "last_seen": "2026-11-08"
   },
   {
    "id": "capcut-mac-9.8.0-beta5.4791",
@@ -7559,7 +7559,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-07"
+   "last_seen": "2026-11-08"
   },
   {
    "id": "capcut-mac-9.8.0-beta4.4780",
@@ -7647,7 +7647,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-07"
+   "last_seen": "2026-11-08"
   },
   {
    "id": "capcut-mac-9.7.1.4778",
@@ -7664,7 +7664,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-07",
+   "last_seen": "2026-11-08",
    "http_status": 206
   },
   {
@@ -7828,5 +7828,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-07T16:36:43Z"
+ "updated_at": "2026-11-08T16:46:21Z"
 }
