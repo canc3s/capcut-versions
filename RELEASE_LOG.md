@@ -144,10 +144,11 @@
 | 2026-11-03 | **5.5.0.9965** | 837.1 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v5.5.0.9965-jianying-mac) |
 | 2026-11-03 | **4.2.0-beta-nvidia** | 902.7 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v4.2.0-beta-nvidia-jianying-mac) |
 
-### Android (7)
+### Android (8)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-10 | **22.1.0** | 460.3 MiB | `b9860af2` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v22.1.0-jianying-android-221001600) |
 | 2026-11-03 | **22.0.0** | 457.5 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v22.0.0-jianying-android-220001600) |
 | 2026-11-03 | **21.9.0** | 457.0 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v21.9.0-jianying-android-219001600) |
 | 2026-11-03 | **21.8.0** | 455.6 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v21.8.0-jianying-android-218001600) |
@@ -260,10 +261,11 @@
 | 2026-11-03 | **9.7.0.4156** | 601.9 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4156-capcut-win-arm64) |
 | 2026-11-03 | **9.7.0.4153** | 601.9 MiB | `189b2981` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4153-capcut-win-arm64) |
 
-### macOS (16)
+### macOS (17)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-10 | **9.8.0-beta7.4794** | 1.3 GiB | `b61c15b4` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0-beta7.4794-capcut-mac) |
 | 2026-11-09 | **9.8.0-beta6.4793** | 1.3 GiB | `415c414d` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0-beta6.4793-capcut-mac) |
 | 2026-11-06 | **9.8.0-beta5.4791** | 1.3 GiB | `e7037fa6` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0-beta5.4791-capcut-mac) |
 | 2026-11-05 | **9.8.0-beta4.4780** | 1.3 GiB | `fcbbbdeb` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0-beta4.4780-capcut-mac) |
