@@ -35,7 +35,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 206
   },
   {
@@ -3264,7 +3264,7 @@
     }
    ],
    "http_status": 206,
-   "last_seen": "2026-11-10"
+   "last_seen": "2026-11-11"
   },
   {
    "id": "jianying-win-arm64-11.6.0.14555",
@@ -3281,7 +3281,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 0
   },
   {
@@ -3299,7 +3299,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 0
   },
   {
@@ -3317,7 +3317,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 0
   },
   {
@@ -3471,6 +3471,43 @@
    "http_status": 206
   },
   {
+   "id": "capcut-win-x64-9.7.1.4203",
+   "product": "capcut",
+   "platform": "win-x64",
+   "version": "9.7.1.4203",
+   "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_7_1_4203_capcutpc_0_creatortool.exe",
+   "size": 617009576,
+   "sha256": "03fd42dcbee5dae7e3fae8c2e6465bb91c9f6410fa7c297272654d2f17f50d5e",
+   "release_date": "2026-11-05",
+   "source": "winget",
+   "asset_name": "CapCut_9_7_1_4203_capcutpc_0_creatortool.exe",
+   "first_seen": "2026-11-11",
+   "released": true,
+   "dead": false,
+   "alternates": [
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_9_7_1_4203_capcutpc_0_creatortool.exe",
+     "sha256": "03FD42DCBEE5DAE7E3FAE8C2E6465BB91C9F6410FA7C297272654D2F17F50D5E",
+     "size": null
+    },
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_9_7_1_4203_capcutpc_0.exe",
+     "sha256": null,
+     "size": null
+    },
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_split_9_7_1_4203_capcutpc_0.exe",
+     "sha256": null,
+     "size": null
+    }
+   ],
+   "last_seen": "2026-11-11",
+   "http_status": 206
+  },
+  {
    "id": "capcut-win-x64-9.7.0.4153",
    "product": "capcut",
    "platform": "win-x64",
@@ -3492,7 +3529,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 206
   },
   {
@@ -3500,17 +3537,36 @@
    "product": "capcut",
    "platform": "win-x64",
    "version": "9.6.0.4097",
-   "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_6_0_4097_capcutpc_0_creatortool.exe",
+   "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_9_6_0_4097_capcutpc_0.exe",
    "size": 611677808,
-   "sha256": null,
+   "sha256": "16EFD5C47F7D5349A6D1BEC46FDF43F109EA63CFBD04687BE54C79F6F1626311",
    "release_date": "2026-10-08",
-   "source": "official-cdn",
-   "asset_name": "CapCut_9_6_0_4097_capcutpc_0_creatortool.exe",
+   "source": "winget",
+   "asset_name": "CapCut_9_6_0_4097_capcutpc_0.exe",
    "first_seen": "2026-11-03",
    "released": true,
    "dead": false,
-   "alternates": [],
-   "last_seen": "2026-11-10",
+   "alternates": [
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_9_6_0_4097_capcutpc_0_creatortool.exe",
+     "sha256": "16EFD5C47F7D5349A6D1BEC46FDF43F109EA63CFBD04687BE54C79F6F1626311",
+     "size": null
+    },
+    {
+     "source": "official-cdn",
+     "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_6_0_4097_capcutpc_0_creatortool.exe",
+     "sha256": "16EFD5C47F7D5349A6D1BEC46FDF43F109EA63CFBD04687BE54C79F6F1626311",
+     "size": 611677808
+    },
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_split_9_6_0_4097_capcutpc_0.exe",
+     "sha256": null,
+     "size": null
+    }
+   ],
+   "last_seen": "2026-11-11",
    "http_status": 206
   },
   {
@@ -3528,7 +3584,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 206
   },
   {
@@ -7539,7 +7595,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 206
   },
   {
@@ -7558,7 +7614,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-10"
+   "last_seen": "2026-11-11"
   },
   {
    "id": "capcut-mac-9.8.0-beta7.4794",
@@ -7575,7 +7631,8 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "http_status": 206
+   "http_status": 206,
+   "last_seen": "2026-11-11"
   },
   {
    "id": "capcut-mac-9.8.0-beta6.4793",
@@ -7698,7 +7755,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-10"
+   "last_seen": "2026-11-11"
   },
   {
    "id": "capcut-mac-9.7.1.4778",
@@ -7715,7 +7772,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-11",
    "http_status": 206
   },
   {
@@ -7879,5 +7936,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-10T18:12:58Z"
+ "updated_at": "2026-11-11T18:01:28Z"
 }
