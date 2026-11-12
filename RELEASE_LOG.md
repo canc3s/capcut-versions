@@ -159,7 +159,7 @@
 
 ## CapCut (国际版)
 
-### Windows x64 (91)
+### Windows x64 (92)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -254,13 +254,15 @@
 | 2026-11-03 | **1.3.2.166** | 374.8 MiB | `B72D64E9` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v1.3.2.166-capcut-win-x64) |
 | 2026-11-03 | **1.3.0.140** | 374.8 MiB | `57E9E7A5` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v1.3.0.140-capcut-win-x64) |
 | 2026-11-03 | **1.0.5.80** | 333.3 MiB | `1B49A50D` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v1.0.5.80-capcut-win-x64) |
+| 2026-11-12 | **Unknown** | 588.5 MiB | `aa9e41de` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/vUnknown-capcut-win-x64) |
 
-### Windows ARM64 (2)
+### Windows ARM64 (3)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-11-03 | **9.7.0.4156** | 601.9 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4156-capcut-win-arm64) |
 | 2026-11-03 | **9.7.0.4153** | 601.9 MiB | `189b2981` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4153-capcut-win-arm64) |
+| 2026-11-12 | **Unknown** | 610.3 MiB | `be018962` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/vUnknown-capcut-win-arm64) |
 
 ### macOS (17)
 
