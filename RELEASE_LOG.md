@@ -5,10 +5,11 @@
 
 ## 剪映 (国内版)
 
-### Windows x64 (120)
+### Windows x64 (121)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-13 | **11.8.0.14778** | 962.2 MiB | `a3849e1f` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.8.0.14778-jianying-win-x64) |
 | 2026-10-28 | **11.7.0.14652** | 888.9 MiB | `B2597B52` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.7.0.14652-jianying-win-x64) |
 | 2026-10-08 | **11.6.0.14552** | 880.7 MiB | `410441C0` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.6.0.14552-jianying-win-x64) |
 | 2026-09-14 | **11.5.0.14471** | 670.7 MiB | `E0B4C100` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.5.0.14471-jianying-win-x64) |
@@ -159,10 +160,11 @@
 
 ## CapCut (国际版)
 
-### Windows x64 (92)
+### Windows x64 (93)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-10 | **9.8.0.4213** | 597.6 MiB | `0bc1ffb2` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0.4213-capcut-win-x64) |
 | 2026-11-05 | **9.7.1.4203** | 588.4 MiB | `03fd42dc` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.1.4203-capcut-win-x64) |
 | 2026-11-03 | **9.7.0.4153** | 588.5 MiB | `aa9e41de` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4153-capcut-win-x64) |
 | 2026-10-08 | **9.6.0.4097** | 583.3 MiB | `16EFD5C4` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.6.0.4097-capcut-win-x64) |
@@ -256,10 +258,11 @@
 | 2026-11-03 | **1.0.5.80** | 333.3 MiB | `1B49A50D` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v1.0.5.80-capcut-win-x64) |
 | 2026-11-12 | **Unknown** | 588.5 MiB | `aa9e41de` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/vUnknown-capcut-win-x64) |
 
-### Windows ARM64 (3)
+### Windows ARM64 (4)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-13 | **9.8.0.4213** | 610.3 MiB | `be018962` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.8.0.4213-capcut-win-arm64) |
 | 2026-11-03 | **9.7.0.4156** | 601.9 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4156-capcut-win-arm64) |
 | 2026-11-03 | **9.7.0.4153** | 601.9 MiB | `189b2981` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v9.7.0.4153-capcut-win-arm64) |
 | 2026-11-12 | **Unknown** | 610.3 MiB | `be018962` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/vUnknown-capcut-win-arm64) |
