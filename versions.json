@@ -27,6 +27,37 @@
    "http_status": 206
   },
   {
+   "id": "jianying-win-x64-11.8.0.14742",
+   "product": "jianying",
+   "platform": "win-x64",
+   "version": "11.8.0.14742",
+   "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_11_8_0_14742_jianyingpro_msstore_creatortool.exe",
+   "size": 1008709600,
+   "sha256": "9e6d71700ada39ad1312138bc8a0e04ea46522e1aa76aa0a29d5ce1e1139ca34",
+   "release_date": null,
+   "source": "msstore",
+   "asset_name": "Jianying_11_8_0_14742_jianyingpro_msstore_creatortool.exe",
+   "first_seen": "2026-11-14",
+   "released": true,
+   "dead": false,
+   "alternates": [
+    {
+     "source": "msstore",
+     "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_11_8_0_14742_jianyingpro_msstore_creatortool.exe",
+     "sha256": "9e6d71700ada39ad1312138bc8a0e04ea46522e1aa76aa0a29d5ce1e1139ca34",
+     "size": null
+    },
+    {
+     "source": "msstore",
+     "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_11_8_0_14742_jianyingpro_0_creatortool.exe",
+     "sha256": "9e6d71700ada39ad1312138bc8a0e04ea46522e1aa76aa0a29d5ce1e1139ca34",
+     "size": 1008696008,
+     "asset_name": "Jianying_11_8_0_14742_jianyingpro_0_creatortool.exe"
+    }
+   ],
+   "last_seen": "2026-11-14"
+  },
+  {
    "id": "jianying-win-x64-11.7.0.14652",
    "product": "jianying",
    "platform": "win-x64",
@@ -3267,6 +3298,23 @@
    "http_status": 0
   },
   {
+   "id": "jianying-win-arm64-11.8.0.14742",
+   "product": "jianying",
+   "platform": "win-arm64",
+   "version": "11.8.0.14742",
+   "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_11_8_0_14782_jianyingpro_msstore_arm64ec_arm64ec.exe",
+   "size": 991374360,
+   "sha256": "90067a45a19844a780b79d8a4a28d3487a34d0e4a78cc2e03b70459271a56a80",
+   "release_date": null,
+   "source": "msstore",
+   "asset_name": "Jianying_11_8_0_14782_jianyingpro_msstore_arm64ec_arm64ec.exe",
+   "first_seen": "2026-11-14",
+   "released": true,
+   "dead": false,
+   "alternates": [],
+   "http_status": 0
+  },
+  {
    "id": "jianying-win-arm64-11.7.0.14652",
    "product": "jianying",
    "platform": "win-arm64",
@@ -3306,7 +3354,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-14",
    "http_status": 0
   },
   {
@@ -3324,7 +3372,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-14",
    "http_status": 0
   },
   {
@@ -3342,7 +3390,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-14",
    "http_status": 0
   },
   {
@@ -3535,7 +3583,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-13"
+   "last_seen": "2026-11-14"
   },
   {
    "id": "capcut-win-x64-9.7.1.4203",
@@ -3633,7 +3681,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-14",
    "http_status": 206
   },
   {
@@ -3651,7 +3699,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-14",
    "http_status": 206
   },
   {
@@ -7679,7 +7727,8 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "http_status": 206
+   "http_status": 206,
+   "last_seen": "2026-11-14"
   },
   {
    "id": "capcut-win-arm64-9.7.0.4156",
@@ -7696,7 +7745,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-14",
    "http_status": 206
   },
   {
@@ -7750,7 +7799,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-13"
+   "last_seen": "2026-11-14"
   },
   {
    "id": "capcut-mac-9.8.0-beta6.4793",
@@ -7873,7 +7922,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-13"
+   "last_seen": "2026-11-14"
   },
   {
    "id": "capcut-mac-9.7.1.4778",
@@ -7890,7 +7939,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-13",
+   "last_seen": "2026-11-14",
    "http_status": 206
   },
   {
@@ -8054,5 +8103,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-13T18:14:02Z"
+ "updated_at": "2026-11-14T16:50:21Z"
 }

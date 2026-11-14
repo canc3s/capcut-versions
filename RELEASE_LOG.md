@@ -5,11 +5,12 @@
 
 ## 剪映 (国内版)
 
-### Windows x64 (121)
+### Windows x64 (122)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
 | 2026-11-13 | **11.8.0.14778** | 962.2 MiB | `a3849e1f` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.8.0.14778-jianying-win-x64) |
+| 2026-11-14 | **11.8.0.14742** | 962.0 MiB | `9e6d7170` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.8.0.14742-jianying-win-x64) |
 | 2026-10-28 | **11.7.0.14652** | 888.9 MiB | `B2597B52` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.7.0.14652-jianying-win-x64) |
 | 2026-10-08 | **11.6.0.14552** | 880.7 MiB | `410441C0` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.6.0.14552-jianying-win-x64) |
 | 2026-09-14 | **11.5.0.14471** | 670.7 MiB | `E0B4C100` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.5.0.14471-jianying-win-x64) |
@@ -131,10 +132,11 @@
 | 2026-11-03 | **2.0.0.4048** | 345.7 MiB | `9AB919F6` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v2.0.0.4048-jianying-win-x64) |
 | 2026-11-03 | **1.7.0.3739** | 342.2 MiB | `074291AE` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v1.7.0.3739-jianying-win-x64) |
 
-### Windows ARM64 (2)
+### Windows ARM64 (3)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-14 | **11.8.0.14742** | 945.4 MiB | `90067a45` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.8.0.14742-jianying-win-arm64) |
 | 2026-11-03 | **11.7.0.14652** | 863.7 MiB | `9d67f8e4` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.7.0.14652-jianying-win-arm64) |
 | 2026-11-03 | **11.6.0.14555** | 863.7 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.6.0.14555-jianying-win-arm64) |
 
