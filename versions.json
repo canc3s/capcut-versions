@@ -55,7 +55,7 @@
      "asset_name": "Jianying_11_8_0_14742_jianyingpro_0_creatortool.exe"
     }
    ],
-   "last_seen": "2026-11-14"
+   "last_seen": "2026-11-15"
   },
   {
    "id": "jianying-win-x64-11.7.0.14652",
@@ -3312,7 +3312,8 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "http_status": 0
+   "http_status": 0,
+   "last_seen": "2026-11-15"
   },
   {
    "id": "jianying-win-arm64-11.7.0.14652",
@@ -3354,7 +3355,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "http_status": 0
   },
   {
@@ -3372,7 +3373,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "http_status": 0
   },
   {
@@ -3390,7 +3391,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "http_status": 0
   },
   {
@@ -3583,7 +3584,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-14"
+   "last_seen": "2026-11-15"
   },
   {
    "id": "capcut-win-x64-9.7.1.4203",
@@ -3681,7 +3682,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "http_status": 206
   },
   {
@@ -3699,7 +3700,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "http_status": 206
   },
   {
@@ -7728,7 +7729,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-14"
+   "last_seen": "2026-11-15"
   },
   {
    "id": "capcut-win-arm64-9.7.0.4156",
@@ -7745,7 +7746,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "http_status": 206
   },
   {
@@ -7799,7 +7800,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-14"
+   "last_seen": "2026-11-15"
   },
   {
    "id": "capcut-mac-9.8.0-beta6.4793",
@@ -7922,7 +7923,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-14"
+   "last_seen": "2026-11-15"
   },
   {
    "id": "capcut-mac-9.7.1.4778",
@@ -7939,7 +7940,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-14",
+   "last_seen": "2026-11-15",
    "http_status": 206
   },
   {
@@ -8103,5 +8104,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-14T16:50:21Z"
+ "updated_at": "2026-11-15T17:23:41Z"
 }
