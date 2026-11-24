@@ -61,7 +61,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "id": "jianying-win-x64-11.7.0.14652",
@@ -3326,7 +3326,7 @@
     }
    ],
    "http_status": 0,
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "id": "jianying-win-arm64-11.7.0.14652",
@@ -3368,7 +3368,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "http_status": 0
   },
   {
@@ -3386,7 +3386,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "http_status": 0
   },
   {
@@ -3404,8 +3404,25 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "http_status": 0
+  },
+  {
+   "id": "jianying-android-22.3.0-223001600",
+   "product": "jianying",
+   "platform": "android",
+   "version": "22.3.0",
+   "url": "https://lf9-apk.ugapk.cn/package/apk/videocut/18076_223001600/videocut_360_1775_jianrong_v18076_223001600_681c_1795505615.apk",
+   "size": 488238320,
+   "sha256": "e14bfdc6950888de50dae0b0384af713d08b55d11885ddd6ae37d3af9f5c2fc8",
+   "release_date": null,
+   "source": "ugapk",
+   "asset_name": "videocut_360_1775_jianrong_v18076_223001600_681c_1795505615.apk",
+   "build": "223001600",
+   "first_seen": "2026-11-24",
+   "released": true,
+   "dead": false,
+   "alternates": []
   },
   {
    "id": "jianying-android-22.2.0-222001600",
@@ -3614,7 +3631,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "id": "capcut-win-x64-9.7.1.4203",
@@ -3712,7 +3729,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "http_status": 206
   },
   {
@@ -3730,7 +3747,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "http_status": 206
   },
   {
@@ -7759,7 +7776,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "id": "capcut-win-arm64-9.7.0.4156",
@@ -7776,7 +7793,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "http_status": 206
   },
   {
@@ -7830,7 +7847,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-23"
+   "last_seen": "2026-11-24"
   },
   {
    "id": "capcut-mac-9.9.0-beta6.4836",
@@ -7847,7 +7864,8 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "http_status": 206
+   "http_status": 206,
+   "last_seen": "2026-11-24"
   },
   {
    "id": "capcut-mac-9.9.0-beta5.4832",
@@ -7934,7 +7952,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-23",
+   "last_seen": "2026-11-24",
    "http_status": 206
   },
   {
@@ -8257,5 +8275,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-23T22:14:00Z"
+ "updated_at": "2026-11-24T20:52:15Z"
 }

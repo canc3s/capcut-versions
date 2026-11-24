@@ -147,10 +147,11 @@
 | 2026-11-03 | **5.5.0.9965** | 837.1 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v5.5.0.9965-jianying-mac) |
 | 2026-11-03 | **4.2.0-beta-nvidia** | 902.7 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v4.2.0-beta-nvidia-jianying-mac) |
 
-### Android (9)
+### Android (10)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-24 | **22.3.0** | 465.6 MiB | `e14bfdc6` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v22.3.0-jianying-android-223001600) |
 | 2026-11-17 | **22.2.0** | 462.9 MiB | `9960bdbe` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v22.2.0-jianying-android-222001600) |
 | 2026-11-10 | **22.1.0** | 460.3 MiB | `b9860af2` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v22.1.0-jianying-android-221001600) |
 | 2026-11-03 | **22.0.0** | 457.5 MiB | `-` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v22.0.0-jianying-android-220001600) |
