@@ -61,7 +61,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-24"
+   "last_seen": "2026-11-25"
   },
   {
    "id": "jianying-win-x64-11.7.0.14652",
@@ -3326,7 +3326,7 @@
     }
    ],
    "http_status": 0,
-   "last_seen": "2026-11-24"
+   "last_seen": "2026-11-25"
   },
   {
    "id": "jianying-win-arm64-11.7.0.14652",
@@ -3368,7 +3368,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "http_status": 0
   },
   {
@@ -3386,7 +3386,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "http_status": 0
   },
   {
@@ -3404,7 +3404,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "http_status": 0
   },
   {
@@ -3592,6 +3592,43 @@
    "http_status": 206
   },
   {
+   "id": "capcut-win-x64-9.9.0.4252",
+   "product": "capcut",
+   "platform": "win-x64",
+   "version": "9.9.0.4252",
+   "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_9_0_4252_capcutpc_0_creatortool.exe",
+   "size": 631773864,
+   "sha256": "e16ecf188403577d9dad57f2ba13bd58652f9647435f5576f0a45d6b7dadbb46",
+   "release_date": "2026-11-22",
+   "source": "winget",
+   "asset_name": "CapCut_9_9_0_4252_capcutpc_0_creatortool.exe",
+   "first_seen": "2026-11-25",
+   "released": true,
+   "dead": false,
+   "alternates": [
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_9_9_0_4252_capcutpc_0_creatortool.exe",
+     "sha256": "E16ECF188403577D9DAD57F2BA13BD58652F9647435F5576F0A45D6B7DADBB46",
+     "size": null
+    },
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_9_9_0_4252_capcutpc_0.exe",
+     "sha256": null,
+     "size": null
+    },
+    {
+     "source": "winget",
+     "url": "https://sf16-web-tos-buz.capcutcdn-us.com/obj/capcut-web-buz-tx/packages/CapCut_split_9_9_0_4252_capcutpc_0.exe",
+     "sha256": null,
+     "size": null
+    }
+   ],
+   "last_seen": "2026-11-25",
+   "http_status": 206
+  },
+  {
    "id": "capcut-win-x64-9.8.0.4213",
    "product": "capcut",
    "platform": "win-x64",
@@ -3729,7 +3766,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "http_status": 206
   },
   {
@@ -3747,7 +3784,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "http_status": 206
   },
   {
@@ -7757,8 +7794,16 @@
    "first_seen": "2026-11-12",
    "released": true,
    "dead": false,
-   "alternates": [],
-   "http_status": 206
+   "alternates": [
+    {
+     "source": "msstore",
+     "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_9_0_4252_capcutpc_msstore_creatortool.exe",
+     "sha256": "cd9244b79f0ea91e491de2ad627bd2cb8dc219a8c329f9e2435cc6ec4cee199d",
+     "size": null
+    }
+   ],
+   "http_status": 206,
+   "last_seen": "2026-11-25"
   },
   {
    "id": "capcut-win-arm64-9.8.0.4213",
@@ -7793,7 +7838,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-24",
+   "last_seen": "2026-11-25",
    "http_status": 206
   },
   {
@@ -7828,8 +7873,16 @@
    "first_seen": "2026-11-12",
    "released": true,
    "dead": false,
-   "alternates": [],
-   "http_status": 206
+   "alternates": [
+    {
+     "source": "msstore",
+     "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_9_0_4254_capcutpc_msstore_arm64ec_arm64ec.exe",
+     "sha256": "dc4c644ea07ce4d939688f48852c8823ba3350fd62e4742b7616c0dd4c7c27b2",
+     "size": null
+    }
+   ],
+   "http_status": 206,
+   "last_seen": "2026-11-25"
   },
   {
    "id": "capcut-mac-9.9.5-beta1.4830",
@@ -7847,7 +7900,25 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-24"
+   "last_seen": "2026-11-25"
+  },
+  {
+   "id": "capcut-mac-9.9.0.4841",
+   "product": "capcut",
+   "platform": "mac",
+   "version": "9.9.0.4841",
+   "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_9_0_4841_capcutpc_0_creatortool_nosandbox.dmg",
+   "size": 1409388821,
+   "sha256": "f83b2a0662f6b959aad2e4b7ac37a345568d7634ea0d9b099cfa2d8d6e4340cc",
+   "release_date": null,
+   "source": "brew",
+   "asset_name": "CapCut_9_9_0_4841_capcutpc_0_creatortool_nosandbox.dmg",
+   "first_seen": "2026-11-25",
+   "released": true,
+   "dead": false,
+   "alternates": [],
+   "last_seen": "2026-11-25",
+   "http_status": 206
   },
   {
    "id": "capcut-mac-9.9.0-beta6.4836",
@@ -8275,5 +8346,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-24T20:52:15Z"
+ "updated_at": "2026-11-25T20:10:46Z"
 }
