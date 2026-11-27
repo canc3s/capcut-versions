@@ -2,6 +2,31 @@
  "schema": 1,
  "entries": [
   {
+   "id": "jianying-win-x64-11.9.1.14906",
+   "product": "jianying",
+   "platform": "win-x64",
+   "version": "11.9.1.14906",
+   "url": "https://lf3-package.vlabstatic.com/obj/faceu-packages/Jianying_11_9_1_14906_jianyingpro_0_creatortool.exe",
+   "size": 995852568,
+   "sha256": "dafbb3425bc20f878797cbb7701525c37c75d620f09848e40cd5072c679d1489",
+   "release_date": "2026-11-26",
+   "source": "winget",
+   "asset_name": "Jianying_11_9_1_14906_jianyingpro_0_creatortool.exe",
+   "first_seen": "2026-11-27",
+   "released": true,
+   "dead": false,
+   "alternates": [
+    {
+     "source": "winget",
+     "url": "https://lf6-package.vlabstatic.com/obj/faceu-packages/Jianying_11_9_1_14906_jianyingpro_0_creatortool.exe",
+     "sha256": "DAFBB3425BC20F878797CBB7701525C37C75D620F09848E40CD5072C679D1489",
+     "size": null
+    }
+   ],
+   "last_seen": "2026-11-27",
+   "http_status": 206
+  },
+  {
    "id": "jianying-win-x64-11.8.0.14778",
    "product": "jianying",
    "platform": "win-x64",
@@ -67,7 +92,7 @@
      "size": 1008696008
     }
    ],
-   "last_seen": "2026-11-26"
+   "last_seen": "2026-11-27"
   },
   {
    "id": "jianying-win-x64-11.7.0.14652",
@@ -3332,7 +3357,7 @@
     }
    ],
    "http_status": 0,
-   "last_seen": "2026-11-26"
+   "last_seen": "2026-11-27"
   },
   {
    "id": "jianying-win-arm64-11.7.0.14652",
@@ -3374,7 +3399,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "http_status": 0
   },
   {
@@ -3392,7 +3417,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "http_status": 0
   },
   {
@@ -3410,7 +3435,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "http_status": 0
   },
   {
@@ -3772,7 +3797,7 @@
      "size": null
     }
    ],
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "http_status": 206
   },
   {
@@ -3790,7 +3815,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "http_status": 206
   },
   {
@@ -7809,7 +7834,7 @@
     }
    ],
    "http_status": 206,
-   "last_seen": "2026-11-26"
+   "last_seen": "2026-11-27"
   },
   {
    "id": "capcut-win-arm64-9.8.0.4213",
@@ -7844,7 +7869,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "http_status": 206
   },
   {
@@ -7888,7 +7913,7 @@
     }
    ],
    "http_status": 206,
-   "last_seen": "2026-11-26"
+   "last_seen": "2026-11-27"
   },
   {
    "id": "capcut-mac-9.9.5-beta1.4830",
@@ -7906,7 +7931,7 @@
    "dead": false,
    "alternates": [],
    "http_status": 206,
-   "last_seen": "2026-11-26"
+   "last_seen": "2026-11-27"
   },
   {
    "id": "capcut-mac-9.9.0.4841",
@@ -7923,7 +7948,7 @@
    "released": true,
    "dead": false,
    "alternates": [],
-   "last_seen": "2026-11-26",
+   "last_seen": "2026-11-27",
    "http_status": 206
   },
   {
@@ -8352,5 +8377,5 @@
    "http_status": 206
   }
  ],
- "updated_at": "2026-11-26T19:48:11Z"
+ "updated_at": "2026-11-27T19:39:56Z"
 }

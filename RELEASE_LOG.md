@@ -5,10 +5,11 @@
 
 ## 剪映 (国内版)
 
-### Windows x64 (122)
+### Windows x64 (123)
 
 | 日期 | 版本 | 大小 | SHA256 | 下载 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2026-11-26 | **11.9.1.14906** | 949.7 MiB | `dafbb342` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.9.1.14906-jianying-win-x64) |
 | 2026-11-13 | **11.8.0.14778** | 962.2 MiB | `a3849e1f` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.8.0.14778-jianying-win-x64) |
 | 2026-11-14 | **11.8.0.14742** | 962.0 MiB | `9e6d7170` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.8.0.14742-jianying-win-x64) |
 | 2026-10-28 | **11.7.0.14652** | 888.9 MiB | `B2597B52` | [Release](https://github.com/canc3s/capcut-versions/releases/tag/v11.7.0.14652-jianying-win-x64) |
